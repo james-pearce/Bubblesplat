@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BubbleSplay.xcodeproj">
+      location = "self:/Users/jamespearce/xcode/Bubble1/BubbleSplay/BubbleSplat.xcodeproj">
    </FileRef>
 </Workspace>
