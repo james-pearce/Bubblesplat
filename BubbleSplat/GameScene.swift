@@ -16,13 +16,15 @@ class GameScene: SKScene {
     let tileHeight: CGFloat = 36.0
     
     let gameLayer = SKNode()
-    let cookiesLayer = SKNode()
+    let bubblesLayer = SKNode()
     
     // Sound FX
     let swapSound = SKAction.playSoundFileNamed("Chomp.wav", waitForCompletion: false)
     let invalidSwapSound = SKAction.playSoundFileNamed("Error.wav", waitForCompletion: false)
     let matchSound = SKAction.playSoundFileNamed("Ka-Ching.wav", waitForCompletion: false)
+    // change
     let fallingCookieSound = SKAction.playSoundFileNamed("Scrape.wav", waitForCompletion: false)
+    // change
     let addCookieSound = SKAction.playSoundFileNamed("Drip.wav", waitForCompletion: false)
     
     required init?(coder aDecoder: NSCoder) {
@@ -44,9 +46,26 @@ class GameScene: SKScene {
             x: -tileWidth * CGFloat(numColumns) / 2,
             y: -tileHeight * CGFloat(numRows) / 2
         )
-        cookiesLayer.position = layerPosition
-        gameLayer.addChild(cookiesLayer)
+        bubblesLayer.position = layerPosition
+        gameLayer.addChild(bubblesLayer)
         
+    }
+    
+    func addSprites(for bubbles: Set<Bubble>) {
+        for bubble in bubbles {
+            let sprite = SKSpriteNode(imageNamed: bubble.bubbleType.spriteName)
+            sprite.size = CGSize(width: tileWidth, height: tileHeight)
+            sprite.position = pointFor(column: bubble.column, row: bubble.row)
+            bubblesLayer.addChild(sprite)
+            bubble.sprite = sprite
+        }
+    }
+    
+    private func pointFor(column: Int, row: Int) -> CGPoint {
+        return CGPoint(
+            x: CGFloat(column) * tileWidth + tileWidth / 2,
+            y: CGFloat(row) * tileHeight + tileHeight / 2
+        )
     }
     
 }

@@ -20,6 +20,17 @@ class GameViewController: UIViewController {
     var movesLeft = 0
     var score = 0
     
+    var level: Level!
+    
+    func beginGame() {
+        shuffle()
+    }
+    
+    func shuffle() {
+        let newBubbles = level.shuffle()
+        scene.addSprites(for: newBubbles)
+    }
+    
     lazy var backgroundMusic: AVAudioPlayer? = {
         guard let url = Bundle.main.url(forResource: "Mining by Moonlight", withExtension: "mp3") else {
             return nil
@@ -51,8 +62,13 @@ class GameViewController: UIViewController {
         scene = GameScene(size: skView.bounds.size)
         scene.scaleMode = .aspectFill
         
+        
+        level = Level()
+        scene.level = level
+        
         // Present the scene.
         skView.presentScene(scene)
+        beginGame()
     }
     
     // MARK: IBActions
