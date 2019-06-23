@@ -11,16 +11,16 @@ import SpriteKit
 
 // MARK – CookieType
 enum BubbleType: Int {
-    case unknown = 0, clear, cupcake, danish, donut, macaroon, sugarCookie
+    case unknown = 0, clear, black, orange, pink, purple, soap
     
     var spriteName: String {
         let spriteNames = [
-            "Clear",
-            "Cupcake",
-            "Danish",
-            "Donut",
-            "Macaroon",
-            "SugarCookie"
+            "bubble-clear",
+            "bubble-black",
+            "bubble-orange",
+            "bubble-pink",
+            "bubble-purple",
+            "bubble-soap"
         ]
         return spriteNames[rawValue - 1]
     }

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4467110A22BF92F6008F9DA6 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4467110922BF92F6008F9DA6 /* Sprites.atlas */; };
 		44DC9719225C221A00B7F753 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC9718225C221A00B7F753 /* Bubble.swift */; };
 		44DC971D225CA66E00B7F753 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC971C225CA66E00B7F753 /* Level.swift */; };
-		44E42A22225B675E001AE5A9 /* crown only white.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E42A21225B675E001AE5A9 /* crown only white.png */; };
+		44E9AD9422B25871002A3EAE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E9AD9322B25871002A3EAE /* Default-568h@2x.png */; };
 		44F4DB36225A07280061DE69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4DB35225A07280061DE69 /* AppDelegate.swift */; };
 		44F4DB38225A07280061DE69 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44F4DB37225A07280061DE69 /* GameScene.sks */; };
 		44F4DB3A225A07280061DE69 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44F4DB39225A07280061DE69 /* Actions.sks */; };
@@ -24,9 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4467110922BF92F6008F9DA6 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 		44DC9718225C221A00B7F753 /* Bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
 		44DC971C225CA66E00B7F753 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
-		44E42A21225B675E001AE5A9 /* crown only white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crown only white.png"; sourceTree = "<group>"; };
+		44E9AD9322B25871002A3EAE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		44F4DB32225A07280061DE69 /* BubbleSplat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleSplat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F4DB35225A07280061DE69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F4DB37225A07280061DE69 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		44F4DB29225A07280061DE69 = {
 			isa = PBXGroup;
 			children = (
+				44E9AD9322B25871002A3EAE /* Default-568h@2x.png */,
 				44F4DB34225A07280061DE69 /* BubbleSplat */,
 				44F4DB33225A07280061DE69 /* Products */,
 			);
@@ -72,6 +75,7 @@
 		44F4DB34225A07280061DE69 /* BubbleSplat */ = {
 			isa = PBXGroup;
 			children = (
+				4467110922BF92F6008F9DA6 /* Sprites.atlas */,
 				44F4DB35225A07280061DE69 /* AppDelegate.swift */,
 				44F4DB37225A07280061DE69 /* GameScene.sks */,
 				44F4DB39225A07280061DE69 /* Actions.sks */,
@@ -84,7 +88,6 @@
 				44F4DB53225A08790061DE69 /* Main.storyboard */,
 				44F4DB47225A072A0061DE69 /* Info.plist */,
 				44F4DB42225A072A0061DE69 /* Assets.xcassets */,
-				44E42A21225B675E001AE5A9 /* crown only white.png */,
 				44DC9718225C221A00B7F753 /* Bubble.swift */,
 				44DC971C225CA66E00B7F753 /* Level.swift */,
 			);
@@ -151,10 +154,11 @@
 			files = (
 				44F4DB38225A07280061DE69 /* GameScene.sks in Resources */,
 				44F4DB43225A072A0061DE69 /* Assets.xcassets in Resources */,
+				4467110A22BF92F6008F9DA6 /* Sprites.atlas in Resources */,
 				44F4DB54225A08790061DE69 /* Main.storyboard in Resources */,
 				44F4DB46225A072A0061DE69 /* LaunchScreen.storyboard in Resources */,
 				44F4DB3A225A07280061DE69 /* Actions.sks in Resources */,
-				44E42A22225B675E001AE5A9 /* crown only white.png in Resources */,
+				44E9AD9422B25871002A3EAE /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UN6JCAQY92;
-				INFOPLIST_FILE = BubbleSplay/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BubbleSplat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UN6JCAQY92;
-				INFOPLIST_FILE = BubbleSplay/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BubbleSplat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
